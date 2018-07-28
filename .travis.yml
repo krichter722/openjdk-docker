@@ -1,6 +1,7 @@
 language: sh
-install:
-- sudo apt-get update && sudo apt-get install --yes docker
+
+services:
+- docker
 
 script:
 - ./build_all.sh
